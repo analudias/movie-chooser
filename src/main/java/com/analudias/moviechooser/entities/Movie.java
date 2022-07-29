@@ -5,7 +5,7 @@ import java.time.LocalDate;
 public class Movie {
 	
 	private Long id;
-	private String movieName;
+	private String original_title;
 	private LocalDate date;
 	
 	public Long getId() {
@@ -14,12 +14,14 @@ public class Movie {
 	public void setId(Long id) {
 		this.id = id;
 	}
-	public String getMovieName() {
-		return movieName;
+
+	public String getoriginal_title() {
+		return original_title;
 	}
-	public void setMovieName(String movieName) {
-		this.movieName = movieName;
+	public void setoriginal_title(String original_title) {
+		this.original_title = original_title;
 	}
+
 	public LocalDate getDate() {
 		return date;
 	}
