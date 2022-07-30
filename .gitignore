@@ -12,7 +12,8 @@ target/
 .settings
 .springBeans
 .sts4-cache
-!**/src/main/**/constants/
+!**/src/test/**/constants/
+/src/main/java/**/constants
 
 ### IntelliJ IDEA ###
 .idea
