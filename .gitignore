@@ -12,7 +12,7 @@ target/
 .settings
 .springBeans
 .sts4-cache
-/ConstantsKey.java
+!**/src/test/**/constants/
 
 ### IntelliJ IDEA ###
 .idea
