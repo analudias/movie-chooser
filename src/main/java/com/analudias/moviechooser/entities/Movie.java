@@ -2,11 +2,17 @@ package com.analudias.moviechooser.entities;
 
 import java.time.LocalDate;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class Movie {
 	
 	private Long id;
+	
+	@JsonProperty("original_title")
 	private String originalTitle;
-	private LocalDate date;
+	
+	@JsonProperty("release_date")
+	private String date;
 	
 	public Long getId() {
 		return id;
@@ -22,10 +28,10 @@ public class Movie {
 		this.originalTitle = originalTitle;
 	}
 
-	public LocalDate getDate() {
+	public String getDate() {
 		return date;
 	}
-	public void setDate(LocalDate date) {
+	public void setDate(String date) {
 		this.date = date;
 	}
 }
