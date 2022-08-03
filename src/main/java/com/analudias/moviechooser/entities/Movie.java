@@ -1,7 +1,5 @@
 package com.analudias.moviechooser.entities;
 
-import java.time.LocalDate;
-
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class Movie {
@@ -17,6 +15,7 @@ public class Movie {
 	public Long getId() {
 		return id;
 	}
+	
 	public void setId(Long id) {
 		this.id = id;
 	}
