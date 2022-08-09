@@ -11,10 +11,7 @@ import com.analudias.moviechooser.entities.Movie;
 
 @RestController
 public class MovieController {
-//	
-//	@Autowired
-//	private MovieService movieService;
-	
+
 	@ResponseBody
 	@GetMapping(value = "/{randomId}")
 	public Movie movieByRandomId(@PathVariable int randomId) {

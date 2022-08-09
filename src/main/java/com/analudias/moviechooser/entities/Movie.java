@@ -12,6 +12,9 @@ public class Movie {
 	@JsonProperty("release_date")
 	private String date;
 	
+	@JsonProperty("poster_path")
+	private String moviePoster;
+	
 	public Long getId() {
 		return id;
 	}
@@ -32,5 +35,13 @@ public class Movie {
 	}
 	public void setDate(String date) {
 		this.date = date;
+	}
+
+	public String getMoviePoster() {
+		return moviePoster;
+	}
+
+	public void setMoviePoster(String moviePoster) {
+		this.moviePoster = moviePoster;
 	}
 }
