@@ -14,7 +14,17 @@ public class Movie {
 	
 	@JsonProperty("poster_path")
 	private String moviePoster;
-	
+
+	public Movie() {
+	}
+
+	public Movie(Long id, String originalTitle, String date, String moviePoster) {
+		this.id = id;
+		this.originalTitle = originalTitle;
+		this.date = date;
+		this.moviePoster = moviePoster;
+	}
+
 	public Long getId() {
 		return id;
 	}
