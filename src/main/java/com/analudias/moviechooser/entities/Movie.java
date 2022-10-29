@@ -14,15 +14,19 @@ public class Movie {
 	
 	@JsonProperty("poster_path")
 	private String moviePoster;
+	
+	@JsonProperty("adult")
+	private boolean adult;
 
 	public Movie() {
 	}
 
-	public Movie(Long id, String originalTitle, String date, String moviePoster) {
+	public Movie(Long id, String originalTitle, String date, String moviePoster, boolean adult) {
 		this.id = id;
 		this.originalTitle = originalTitle;
 		this.date = date;
 		this.moviePoster = moviePoster;
+		this.adult = adult;
 	}
 
 	public Long getId() {
@@ -53,5 +57,13 @@ public class Movie {
 
 	public void setMoviePoster(String moviePoster) {
 		this.moviePoster = moviePoster;
+	}
+
+	public boolean isAdult() {
+		return adult;
+	}
+
+	public void setAdult(boolean adult) {
+		this.adult = adult;
 	}
 }

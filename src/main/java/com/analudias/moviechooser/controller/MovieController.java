@@ -29,6 +29,12 @@ public class MovieController {
 		else
 			movie.setMoviePoster("https://image.tmdb.org/t/p/original" + movie.getMoviePoster());
 		
+		if(movie.isAdult()) {
+			movie.setDate("Indisponível");
+			movie.setMoviePoster("Indisponível");
+			movie.setOriginalTitle("Indisponível");
+		}
+		
 		return movie;
 	}
 
